@@ -1,0 +1,8 @@
+INP
+STA A
+INP
+ADD A
+STA 0x008
+OUT
+HLT
+A:.data 1 0

@@ -1,0 +1,12 @@
+INPUT_LOOP: INP
+            SZA
+            BUN 0 ADD_LOOP
+            BUN 0 PRINT_LOOP
+ADD_LOOP:   ADD 0 A
+            STA 0 A
+            BUN 0 INPUT_LOOP
+            HLT
+PRINT_LOOP: LDA 0 A
+            OUT
+            HLT
+A:.data 1 0
